@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />  
+		<style>
+			*{
+        padding: 0;
+	margin: 0;
+
+      }
+			 body{
+                background-image: url('index.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+               
+            }
+			.footi{
+	margin-top:300px;
+	height: 155px;
+}
+p{
+	font-size: 25px;
+	color: aliceblue;
+}
+.exp{
+margin-left: 200px;
+margin-top:100px;
+
+}
+.skills{
+	margin-left: 250px;	
+	
+}
+h2{
+	font-size: 30px;
+	color: aliceblue;
+}
+.myself{
+	margin-top: 100px;
+}
+li{
+	color: aliceblue;
+}
+.tableclass{
+	height: 1000px;
+	width: 100px;
+}
+a{
+	color: rgb(12, 13, 14);
+}
+.footi{
+	margin-top:500px;
+	height: 155px;
+}
+th,td{
+	color: aliceblue;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+	element {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 400px;
+}
+.skills {
+  margin-left: 200px;
+}
+	.myself {
+  margin-top: 220px;
+}
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background: #00050a;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+  z-index: 1;
+}
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+ 
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+
+
+
+		</style>
+</head>
+<body>
+    <div class="herocontact">
+        <nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+			  <i class="fas fa-bars"></i>
+			</label>
+			
+			<ul>
+			  <li><a class="active" href="main.html">Home</a></li>
+			  
+			  <li><a href="resume.html">Resume</a></li>
+			  <li><a href="honesty.html">Honesty</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			</ul>
+		  </nav>
+		  <section></section>
+
+    </div>
+	<div class="myself">
+
+		<table cellspacing="30">
+			<tr>
+			  <td><img src="subash.png" style="width:150px;height:150px;"alt="spyrochhetri"></td>
+			<td><h2>Subash Paudel Chhetri</h2>
+				<br>
+			<p>I am a self taught <em><strong>Programmer</strong></em></p>
+			<hr>
+			<br>
+			<h2><u><a href="https://www.youtube.com/channel/UCdMeIHRE6NjvdJzcsGmwW6Q">More About me</a></u></h2>
+			<br><br>
+			<p>I am a very hard working student studying in Seneca College pursing CPA program.</p>
+			<p>Here are the list of some skills that subash has</p>
+			<br>
+			<ul>
+			<li>Web Design</li>
+			<li>Communication Skills</li>
+			<ul>
+			  <li>Good Communicatoin Skills</li>
+			  <li>Designing</li>
+			</ul>
+			</ul></td>
+		
+			</tr>
+		  </table>
+	</div>
+	  <div class="exp">
+		<h2>My Work Experince</h2>
+	<table c;ass="tableclass" border="3px";>
+	  <thead>
+		<tr>
+		  <th>Developer</th>
+		  <th>Time Duration</th>
+		  <th>Work</th>
+		</tr>
+	  </thead>
+	  <tr>
+		<td>Subash</td>
+		<td>2022-2222</td>
+		<td>Developing</td>
+	
+	  </tr>
+	  </table>
+
+	  </div>
+	
+	
+	  <br>
+	
+	<div class="skills">
+		
+	<br>
+	<table>
+	  <thead>
+		<tr>
+		  <th>Skills</th>
+		  <th>Rating</th>
+		</tr>
+	  </thead>
+	  <tr>
+		<td>Python</td>
+		<td><meter value="50" min="0" max="100"></meter></td>
+	  </tr>
+	  <tr>
+		<td>Java</td>
+		<td><meter value="5" min="0" max="100"></meter></td></td>
+	  </tr>
+	  <tr>
+		<td>HTML</td>
+		<td><meter value="35" min="0" max="100"></meter></td></td>
+	  </tr>
+	  <tr>
+		<td>CSS</td>
+		<td><meter value="90" min="0" max="100"></meter></td></td>
+	  </tr>
+	  <tr>
+		<td>JS</td>
+		<td><meter value="30" min="0" max="100"></meter></td></td>
+	  </tr>
+	
+	</table>
+
+	</div>
+	
+
+
+    <footer class="footi" >
+        <div class="social">
+            <a href="https://www.facebook.com/people/Subash-Chhetri/100052552841128/"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/spyrochhetri"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p class="end">Copyright By Subash Paudel Chhetri</p>
+    </footer>
+</body>
+</html>

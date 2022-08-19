@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: white;
+}
+
+
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+            *{
+        padding: 0;
+	margin: 0;
+
+      }
+      
+            body{
+                background-image: url('index.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+               
+            }
+            label {
+                display: block;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.548rem;
+                color: aliceblue;
+            
+            }
+            form{
+                margin-top: 100px;
+                margin-left: 300px;
+               
+	
+            }
+            .hourdiv,
+            .area {
+                display: none;
+            }
+            input{
+                border-radius:10px;
+                height: 50px;
+                width:350px;
+            }
+            .forcommenthire{
+                width: 30px;
+            }
+            .qn{
+                width: 30px;
+            }
+
+            @media (max-width:991px)
+{
+	form {
+		margin-top: 100px;
+		margin-left: 30px;
+	  }
+      nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px 7px;
+}
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background: #00050a;
+  top: 84px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+  z-index: 1;
+}
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+ 
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+        </style>
+</head>
+
+<body>
+    
+
+    <div class="herocontact">
+        <nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+			  <i class="fas fa-bars"></i>
+			</label>
+			
+			<ul>
+			  <li><a class="active" href="main.html">Home</a></li>
+			  
+			  <li><a href="resume.html">Resume</a></li>
+			  <li><a href="honesty.html">Honesty</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			</ul>
+		  </nav>
+		  <section></section>
+    </div>
+    <!-- 
+        this is for form to form spere
+
+     -->
+<form
+    
+
+  action="https://formspree.io/f/mpznzkbr"
+  method="POST">
+   
+        <h2 style="color: aliceblue;">Contact Me</h2><label for="forname">Name: <br><input type="text" name="name" id="forname" required > </label> 
+        
+        <label for="contactemail">Email:  <br>
+            <input type="email"  name="email" id="contactemail" required ></label> 
+         <label for="foraddress">Address:  <br>
+            <input type="text" name="address" id="foraddress" required ></label>  
+           <label for="forcity">City: <br>
+            <input type="text" name ="city" id="forcity" required >  </label> 
+           <label for="postcode">Postal code: <br>
+            <input type="text" name="postalcode" id="postcode" required > </label> 
+           <label for="qn">What this is about?</label> 
+           <input  type="radio" name="contactques" id="qn" value="Question" required class="forcommenthire" /> Question 
+           <input   type="radio" name="contactques" id="Comment" value="Comment" required  class="forcommenthire" /> Comment 
+           <input  type="radio" name="contactques" id="Hiring" value="Hiring" required class="qn" /> Hiring <br /><br /> 
+        <div class="hourdiv" id="thisisforhours"> <label for="hourratecontct">Hourly rate: <input type="number" name="number"
+            id="hourratecontct" step="0.01" /></label>  </div> 
+        <div class="area" id="areaid">
+            <!-- textarea --> <textarea cols="40" rows="6"></textarea> </div> <br /> 
+            <button type="submit">Send</button>
+    </form> 
+        
+    
+    <script>
+          
+        document.querySelector("form").addEventListener("submit", function runFormVald(e) {        
+             e.preventDefault();               
+           let namecontact = document.querySelector("#forname").value; 
+                   let contactemail = document.querySelector("#contactemail").value;        
+            let foraddress = document.querySelector("#foraddress").value;    
+                 let forcity = document.querySelector("#forcity").value;       
+              let postcodecontct = document.querySelector("#postcode").value;
+                       let qn = document.querySelector('input[name="contactques"]:checked').value;         //regex
+                if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(contactemail)) {           // show error on invalid         
+                     alert("Invalid email!");           
+                     return;         }          // check if postal code is valid by canadian code        
+                          if (!/^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ -]?\d[ABCEGHJ-NPRSTV-Z]\d$/i.test(postcodecontct)) {                 
+                              alert("Invalid postal code!");           return;         }    //shows error if invalid postal code
+                              
+                              alert("Alert for form submitted to Form Spere Sucessfully!");  //for form submission alert  
+                                 });       
+                             //run click event handler    
+                                 document.addEventListener("click", function (e) {          
+                                    if (e.target.classList.contains("qn")) {               
+                                          document.querySelector("#thisisforhours").classList.remove("hourdiv");                 
+                                           document.querySelector("#areaid").classList.add("area");         }          
+                                              if (e.target.classList.contains("forcommenthire")) {           // hide hourly rate    
+                                                   document.querySelector("#thisisforhours").classList.add("hourdiv");   // for hours area           
+                                                   document.querySelector("#areaid").classList.remove("area");         }       });     
+    </script>
+    <footer class="footi" >
+        <div class="social">
+            <a href="https://www.facebook.com/people/Subash-Chhetri/100052552841128/"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/spyrochhetri"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p class="end">Copyright By Subash Paudel Chhetri</p>
+    </footer>
+</body>
+</html>
